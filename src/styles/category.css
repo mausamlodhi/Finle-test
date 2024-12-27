@@ -1,0 +1,38 @@
+.category {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: #2b2c3f;
+    border-radius: 10px;
+}
+.icons-category{
+    width: 100px;
+    display: flex;
+    justify-content: end;
+}
+.category-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    width: 360px;
+}
+
+.category-user {
+    display: flex;
+    /* align-items: center;  */
+}
+.profit-font{
+    font-weight: bold;
+    font-size: x-large;
+}
+.profit{
+    color: #4caf50;
+}
+.profit-end{
+    justify-content: end;
+}
+.profit-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}

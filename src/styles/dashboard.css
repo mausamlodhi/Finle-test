@@ -1,0 +1,117 @@
+.dashboard {
+    display: flex;
+    height: 100vh;
+  }
+  .dashboard-sidebar{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* padding: 20px; */
+    z-index: 1000;
+  }
+
+  .title{
+    margin-top:25px;
+    span{
+
+      text-align-last: center;
+      font-size: larger;
+      font-family: initial;
+      margin-left: 10px;
+    }
+  }
+
+  
+  .dashboard-content {
+    flex: 1;
+    background: #1e1e2e;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .widgets-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .activity-chart {
+    background: #2b2c3f;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .activity-chart h3 {
+    margin-bottom: 15px;
+  }
+  
+  .chart {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .chart .bar {
+    background: #4caf50;
+    width: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .chart .bar:hover {
+    background: #81c784;
+    transform: scaleY(1.1);
+  }
+  
+  .bottom-section {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items at the top of the row */
+    gap: 20px; /* Space between columns */
+  }
+  
+  /* Column Styles */
+  .column {
+    padding: 20px;
+    background: #1e1e2e;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 60% Width Column */
+  .sixty {
+    flex: 3; /* 3 parts out of 5 (60%) */
+  }
+  
+  /* 40% Width Column */
+  .forty {
+    flex: 2; /* 2 parts out of 5 (40%) */
+  }
+
+  .bar-chart {
+    width: 250px;
+    height: 40px;
+    touch-action: pinch-zoom;
+
+  }
+  @media screen and (max-width: 768px) {
+    .row {
+      flex-direction: column; /* Stack columns on smaller screens */
+    }
+  
+    .column {
+      width: 100%; /* Full width for stacked layout */
+    }
+  }
+  
