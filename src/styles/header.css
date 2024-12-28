@@ -12,6 +12,12 @@
   position: sticky;
   top: 0;
   z-index: 10;
+  display: flex;
+  height: 30px;
+    position: fixed;
+    width: 88%;
+    margin-top: 10px;
+
 }
 
 /* Search Bar Styles */
@@ -62,6 +68,16 @@
   color: #4caf50;
 }
 
+.notification-icon{
+  /* color: rgba(252, 5, 5, 0.281); */
+
+  color: white;
+}
+
+.profile-icon{
+  /* color: rgba(255, 255, 0, 0.317); */
+  color: white;
+}
 /* Media Queries for Responsiveness */
 
 /* Tablet View */

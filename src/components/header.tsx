@@ -17,8 +17,8 @@ const Header: React.FC = () => {
       <div className="header-icons">
         <MessageIcon/>
         <SettingsIcon/>
-        <FaBell className="icon" />
-        <FaUserCircle className="icon" />
+        <FaBell className="icon notification-icon" />
+        <FaUserCircle className="icon profile-icon" />
       </div>
     </header>
   );

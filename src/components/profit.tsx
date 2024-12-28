@@ -12,14 +12,24 @@ const Profit: React.FC = () => {
                     <div className='icons-category'>
                         <Flex vertical gap="middle">
                             <Flex gap="small" wrap>
-                                <Progress showInfo={true} size={60} type="circle" percent={75} />
+                                <Progress
+                                    showInfo={true}
+                                    size={60}
+                                    type="circle"
+                                    percent={75}
+                                    strokeColor="#1890ff"
+                                    trailColor="#ddd"
+                                    format={(percent) => (
+                                        <span style={{ color: 'white', fontWeight: 'bold' }}>{percent}%</span>
+                                    )}
+                                />
                             </Flex>
                         </Flex>
                     </div>
                 </li>
                 <li className="profit-item">
                     <div className="category-user">
-                    <p><span className='profit'>3%</span></p>
+                        <p><span className='profit'>3%</span></p>
                     </div>
                     <div className='profit-endy'>
                         <span>The profit has been</span>
